@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-gKXOVf jRKhSY"
+  >
+    <form
+      class="sc-bczRLJ jFsvqI"
+    >
+      <label
+        for="site-search"
+      >
+        Search the site:
+      </label>
+      <div
+        class="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+      >
+        <div
+          class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1ptx2yq-MuiInputBase-root-MuiInput-root"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInput-input MuiInputBase-input MuiInputBase-inputTypeSearch css-c63i49-MuiInputBase-input-MuiInput-input"
+            id="site-search"
+            name="q"
+            placeholder="Search for..."
+            type="search"
+            value=""
+          />
+        </div>
+      </div>
+    </form>
+    <table
+      class="sc-gsnTZi cgNRiL"
+    >
+      <thead
+        class="sc-hKMtZM hWpcTv"
+      >
+        <tr
+          class="sc-dkzDqf gjeuPE"
+        >
+          <th>
+            Title
+          </th>
+          <th>
+            The table header
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+    <div
+      class="sc-jSMfEi fHBbmf"
+    >
+      <button
+        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root Mui-disabled  css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
+        disabled=""
+        tabindex="-1"
+        type="button"
+      >
+        Prev
+      </button>
+      <button
+        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root Mui-disabled  css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
+        disabled=""
+        tabindex="-1"
+        type="button"
+      >
+        Next
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

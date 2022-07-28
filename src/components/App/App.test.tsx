@@ -1,8 +1,7 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import App from './component';
 
-test('renders hello world text', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/hello world/i)
-  expect(linkElement).toBeInTheDocument();
-});
+it("renders", () => {
+  const { asFragment } = render(<App />);
+  expect(asFragment()).toMatchSnapshot();
+})
