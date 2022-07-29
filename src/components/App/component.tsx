@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import debounce from 'lodash.debounce';
 import { useState } from 'react';
 import { SearchField } from '../SearchField';
-import { EmptyResults } from '../EmptyResults';
+import { EmptyState } from '../EmptyState';
 import { Gallery } from '../Gallery';
 import { Pagination } from '../Pagination';
 import { useMoviesFetch } from '../../hooks/useMoviesFetch'
@@ -38,7 +38,7 @@ const App = () => {
           <Gallery content={movies} />
           <Pagination setPage={setPage} totalPages={totalPages} />
         </> :
-        <EmptyResults isEmpty={totalResults === 0} />}
+        <EmptyState isEmpty={totalResults === 0} />}
     </StyledContainer>
   );
 }
