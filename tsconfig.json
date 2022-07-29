@@ -18,7 +18,13 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "./",
+    "paths": {
+      "src/*": [
+        "src/*"
+      ]
+    }
   },
   "include": [
     "src/**/*.{tsx,ts}"

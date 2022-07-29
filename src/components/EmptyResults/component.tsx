@@ -22,9 +22,13 @@ const GhostCard = styled.img`
 
 const placeholderUrl = 'https://nofilmschool.com/sites/default/files/styles/structured_4x3/public/michael_jackson_popcorn.jpg?itok=VgTV0eca';
 
-export const EmptyResults = () => (
+interface Props {
+    isEmpty: boolean;
+}
+
+export const EmptyResults: React.FC<Props> = ({ isEmpty }) => (
     <>
-        <p>Search for movies to find what you should watch next...</p>
+        {isEmpty ? <p>No movies found for this search. Please try again</p> : <p>Search for movies to find what you should watch next...</p>}
         <StyledContainer>
             <GhostCard src={placeholderUrl} />
             <GhostCard src={placeholderUrl} />

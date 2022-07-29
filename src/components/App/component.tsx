@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import debounce from 'lodash.debounce';
 import { useState } from 'react';
 import { SearchField } from '../SearchField';
 import { EmptyResults } from '../EmptyResults';
@@ -19,23 +20,25 @@ const StyledContainer = styled.div`
 const App = () => {
   const [searchTerm, setSearchTerm] = useState<string>(null);
   const [page, setPage] = useState<number>(1);
-  const [movies, totalPages] = useMoviesFetch(searchTerm, page);
+  const [movies, totalPages, totalResults] = useMoviesFetch(searchTerm, page);
 
-  const onSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setTimeout(() => {
-      setSearchTerm(event.target.value);
-    }, 1000);
+  const debouncedSearch = debounce((event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchTerm(event.target.value);
+  }, 300);
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    debouncedSearch(event);
   }
 
   return (
     <StyledContainer>
-      <SearchField onChange={onSearchChange} />
+      <SearchField onChange={handleChange} />
       {movies.length ?
         <>
           <Gallery content={movies} />
           <Pagination setPage={setPage} totalPages={totalPages} />
         </> :
-        <EmptyResults />}
+        <EmptyResults isEmpty={totalResults === 0} />}
     </StyledContainer>
   );
 }
