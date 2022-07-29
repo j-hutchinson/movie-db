@@ -2,11 +2,12 @@ import axios from 'axios';
 import styled from 'styled-components';
 import { useEffect, useState } from 'react';
 import { SearchField } from '../SearchField';
-import { Table } from '../Table';
+import { Gallery } from '../Gallery';
 import { Pagination } from '../Pagination';
+import { Content } from '../types';
 
 const StyledContainer = styled.div`
-  max-width: 800px;
+  max-width: 1024px;
   margin: 72px auto;
   display: flex;
   flex-direction: column;
@@ -16,10 +17,10 @@ const StyledContainer = styled.div`
 `;
 
 const URL = 'https://api.themoviedb.org/3/search/movie';
-const API_KEY = 'XXX';
+const API_KEY = '24f92b43eac6893aa2f21e387f997699';
 
 const App = () => {
-  const [data, setData] = useState<any>([]);
+  const [data, setData] = useState<Content[]>([]);
   const [searchTerm, setSearchTerm] = useState<string>('transformers');
   const [page, setPage] = useState<number>(1);
   const [totalPages, setTotalPage] = useState<number>(1);
@@ -48,8 +49,8 @@ const App = () => {
   return (
     <StyledContainer>
       <SearchField onChange={onSearchChange} />
-      <Table content={data} />
-      <Pagination currentPage={page} setPage={setPage} totalPages={totalPages} />
+      <Gallery content={data} />
+      <Pagination setPage={setPage} totalPages={totalPages} />
     </StyledContainer>
   );
 }

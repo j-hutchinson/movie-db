@@ -1,33 +1,15 @@
-import styled from "styled-components";
-import { Button } from '@mui/material';
-
-const StyledContainer = styled.div`
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-`;
+import { Pagination as MaterialPagination } from '@mui/material';
 
 interface Props {
-    currentPage: number;
     totalPages: number;
     setPage: (page: number) => void;
 }
 
-export const Pagination: React.FC<Props> = ({ currentPage, totalPages, setPage }) => (
-    <StyledContainer>
-        <Button
-            variant="outlined"
-            disabled={currentPage === 1}
-            onClick={() => setPage(currentPage - 1)}
-        >
-            Prev
-        </Button>
-        <Button
-            variant="outlined"
-            onClick={() => { console.log('click'); setPage(currentPage + 1) }}
-            disabled={currentPage === totalPages}
-        >
-            Next
-        </Button>
-    </StyledContainer>
-)
+export const Pagination: React.FC<Props> = ({ totalPages, setPage }) => {
+    const handleChange = (_, value) => {
+        setPage(value);
+    };
+    return (
+        <MaterialPagination count={totalPages} variant="outlined" color="primary" onChange={handleChange} />
+    );
+}
