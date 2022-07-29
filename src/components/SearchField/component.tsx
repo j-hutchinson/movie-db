@@ -15,6 +15,14 @@ interface Props {
 export const SearchField: React.FC<Props> = (props) => (
     <StyledForm>
         <label htmlFor="site-search">Search the site:</label>
-        <TextField type="search" id="site-search" name="q" placeholder="Search for..." {...props} variant="standard" />
+        <TextField
+            type="search"
+            id="site-search"
+            name="search"
+            placeholder="Search for..."
+            variant="standard"
+            data-testid="search-field"
+            {...props}
+        />
     </StyledForm>
 );

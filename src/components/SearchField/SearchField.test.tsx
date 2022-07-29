@@ -1,9 +1,11 @@
 import { render, screen } from '@testing-library/react';
 import { SearchField } from './component';
 
-test('renders hello world text', () => {
-  const onChange = jest.fn();
-  render(<SearchField onChange={onChange} />);
-  const linkElement = screen.getByText(/Search the site/i)
-  expect(linkElement).toBeInTheDocument();
+describe("SearchField", () => {
+  const onChangeMock = jest.fn();
+  it('should render correctly', () => {
+    render(<SearchField onChange={onChangeMock} />);
+    const labelElement = screen.getByText(/Search the site/i)
+    expect(labelElement).toBeInTheDocument();
+  });
 });

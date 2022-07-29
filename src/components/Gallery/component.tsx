@@ -15,7 +15,7 @@ interface Props {
 export const Gallery: React.FC<Props> = ({ content }) => (
     <StyledContainer>
         {content.map(row => (
-            <StyledItem key={row.id}>
+            <StyledItem key={row.id} data-testid="gallery-item">
                 <CellContainer>
                     <StyledImageHolder>
                         <StyledRating>{row.vote_average}</StyledRating>

@@ -17,17 +17,18 @@ const StyledContainer = styled.div`
 
 const GhostCard = styled.img`
     height: 320px;
-    width: 210px;
+    width: 320px;
 `;
 
+const placeholderUrl = 'https://nofilmschool.com/sites/default/files/styles/structured_4x3/public/michael_jackson_popcorn.jpg?itok=VgTV0eca';
 
 export const EmptyResults = () => (
     <>
         <p>Search for movies to find what you should watch next...</p>
         <StyledContainer>
-            <GhostCard src="http://www.theprintworks.com/wp-content/themes/psBella/assets/img/film-poster-placeholder.png" />
-            <GhostCard src="http://www.theprintworks.com/wp-content/themes/psBella/assets/img/film-poster-placeholder.png" />
-            <GhostCard src="http://www.theprintworks.com/wp-content/themes/psBella/assets/img/film-poster-placeholder.png" />
+            <GhostCard src={placeholderUrl} />
+            <GhostCard src={placeholderUrl} />
+            <GhostCard src={placeholderUrl} />
         </StyledContainer>
     </>
 )
