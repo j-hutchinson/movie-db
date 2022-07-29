@@ -6,13 +6,15 @@ export const StyledContainer = styled.div`
     gap: 16px;
     padding: 8px;
 
-    
     @media screen and (max-width: 1024px) {
         grid-template-columns: 1fr 1fr 1fr;
     }
-
     @media screen and (max-width: 800px) {
         grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width: 540px) {
+        grid-template-columns: 1fr;
+        margin: 0 80px;
     }
 `;
 
