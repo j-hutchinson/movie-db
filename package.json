@@ -50,12 +50,6 @@
       "last 1 safari version"
     ]
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "prettier": {
     "printWidth": 95,
     "tabWidth": 1,

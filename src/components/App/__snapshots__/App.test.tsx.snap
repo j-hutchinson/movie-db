@@ -3,7 +3,7 @@
 exports[`renders 1`] = `
 <DocumentFragment>
   <div
-    class="sc-iBkjds fQNqgJ"
+    class="sc-papXJ jruALX"
   >
     <form
       class="sc-bczRLJ jFsvqI"
@@ -32,73 +32,32 @@ exports[`renders 1`] = `
       </div>
     </form>
     <div
-      class="sc-gsnTZi dgheEZ"
-    />
-    <nav
-      aria-label="pagination navigation"
-      class="MuiPagination-root MuiPagination-outlined css-1oj2twp-MuiPagination-root"
+      class="sc-gsnTZi gabPCU"
     >
-      <ul
-        class="MuiPagination-ul css-wjh20t-MuiPagination-ul"
-      >
-        <li>
-          <button
-            aria-label="Go to previous page"
-            class="MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-previousNext css-1y7coo4-MuiButtonBase-root-MuiPaginationItem-root"
-            disabled=""
-            tabindex="-1"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon"
-              data-testid="NavigateBeforeIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
-              />
-            </svg>
-          </button>
-        </li>
-        <li>
-          <button
-            aria-current="true"
-            aria-label="page 1"
-            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-outlinedPrimary Mui-selected MuiPaginationItem-page css-1y7coo4-MuiButtonBase-root-MuiPaginationItem-root"
-            tabindex="0"
-            type="button"
-          >
-            1
-            <span
-              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-            />
-          </button>
-        </li>
-        <li>
-          <button
-            aria-label="Go to next page"
-            class="MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-outlined MuiPaginationItem-circular MuiPaginationItem-outlinedPrimary Mui-disabled MuiPaginationItem-previousNext css-1y7coo4-MuiButtonBase-root-MuiPaginationItem-root"
-            disabled=""
-            tabindex="-1"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon"
-              data-testid="NavigateNextIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-              />
-            </svg>
-          </button>
-        </li>
-      </ul>
-    </nav>
+      <img
+        class="sc-dkzDqf dPWZXO"
+        src="http://www.theprintworks.com/wp-content/themes/psBella/assets/img/film-poster-placeholder.png"
+      />
+      <img
+        class="sc-dkzDqf dPWZXO"
+        src="http://www.theprintworks.com/wp-content/themes/psBella/assets/img/film-poster-placeholder.png"
+      />
+      <img
+        class="sc-dkzDqf dPWZXO"
+        src="http://www.theprintworks.com/wp-content/themes/psBella/assets/img/film-poster-placeholder.png"
+      />
+      <img
+        class="sc-dkzDqf dPWZXO"
+        src="http://www.theprintworks.com/wp-content/themes/psBella/assets/img/film-poster-placeholder.png"
+      />
+      <img
+        class="sc-dkzDqf dPWZXO"
+        src="http://www.theprintworks.com/wp-content/themes/psBella/assets/img/film-poster-placeholder.png"
+      />
+    </div>
+    <p>
+      Search for movies to find what you should watch next...
+    </p>
   </div>
 </DocumentFragment>
 `;
