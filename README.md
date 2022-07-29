@@ -1,5 +1,10 @@
 Movie DB experiment
 
+Improvements 
+- Sorting, sort by rating, release date etc. 
+- Improved search, fuzzy search implementation or filtered search. Ie search by director, actor, title
+- UX improvement, create page per movie and display more information such as overview etc.
+
 ### `npm start`
 
 Runs the app in the development mode.\
