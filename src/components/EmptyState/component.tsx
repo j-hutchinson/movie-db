@@ -19,10 +19,7 @@ interface Props {
 
 export const EmptyState: React.FC<Props> = ({ isEmpty }) => (
     <>
-        {isEmpty ?
-            <StyledPara>No movies found for this search. Please try again</StyledPara> :
-            <StyledPara>Search for movies to find what you should watch next...</StyledPara>
-        }
+        <StyledPara>{isEmpty ? 'No movies found for this search. Please try again' : 'Search for movies to find what you should watch next...'}</StyledPara>
         <StyledContainer>
             <GhostCard src='https://nofilmschool.com/sites/default/files/styles/structured_4x3/public/michael_jackson_popcorn.jpg?itok=VgTV0eca' />
         </StyledContainer>

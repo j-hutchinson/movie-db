@@ -18,7 +18,7 @@ export const Gallery: React.FC<Props> = ({ content }) => (
             <StyledItem key={row.id} data-testid="gallery-item">
                 <CellContainer>
                     <StyledImageHolder>
-                        <StyledRating>{row.vote_average}</StyledRating>
+                        {row.vote_average > 0 && <StyledRating>{row.vote_average}</StyledRating>}
                         {row.poster_path ?
                             <StyledImage src={`https://image.tmdb.org/t/p/w500/${row.poster_path}`} />
                             :

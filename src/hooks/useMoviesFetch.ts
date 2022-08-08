@@ -11,7 +11,6 @@ type Response = {
     total_results: number,
 }
 
-
 export function useMoviesFetch(
     searchTerm: string,
     page: number,
